@@ -21,7 +21,7 @@
         INSERT INTO tb_area
         (area_name,priority,create_time,last_edit_time)
         VALUES
-        (#{areaName},#{priority},now(),#{lastEditTime})
+        (#{areaName},#{priority},now(),now())
     </insert>
     <update id="updateArea" parameterType="com.lh.pojo.Area">
         UPDATE tb_area
